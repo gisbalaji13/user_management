@@ -1,0 +1,277 @@
+2023-02-15 22:14:42 error: uncaughtException: listen EADDRINUSE: address already in use :::3000
+Error: listen EADDRINUSE: address already in use :::3000
+    at Server.setupListenHandle [as _listen2] (node:net:1334:16)
+    at listenInCluster (node:net:1382:12)
+    at Server.listen (node:net:1469:7)
+    at Function.listen (E:\projects\management\user_management\node_modules\express\lib\application.js:635:24)
+    at App.listen (E:\projects\management\user_management\src\app.ts:32:14)
+    at Object.<anonymous> (E:\projects\management\user_management\src\server.ts:11:5)
+    at Module._compile (node:internal/modules/cjs/loader:1101:14)
+    at Module.m._compile (E:\projects\management\user_management\node_modules\ts-node\src\index.ts:1618:23)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1153:10)
+    at Object.require.extensions.<computed> [as .ts] (E:\projects\management\user_management\node_modules\ts-node\src\index.ts:1621:12)
+2023-02-15 22:19:00 error: uncaughtException: Cannot find module '@routes/auth.route'
+Require stack:
+- E:\projects\user_management\src\server.ts
+Error: Cannot find module '@routes/auth.route'
+Require stack:
+- E:\projects\user_management\src\server.ts
+    at Function.Module._resolveFilename (node:internal/modules/cjs/loader:933:15)
+    at Function.Module._resolveFilename.sharedData.moduleResolveFilenameHook.installedValue (E:\projects\user_management\node_modules\@cspotcode\source-map-support\source-map-support.js:811:30)
+    at Function.Module._resolveFilename (E:\projects\user_management\node_modules\tsconfig-paths\src\register.ts:115:36)
+    at Function.Module._load (node:internal/modules/cjs/loader:778:27)
+    at Module.require (node:internal/modules/cjs/loader:1005:19)
+    at require (node:internal/modules/cjs/helpers:102:18)
+    at Object.<anonymous> (E:\projects\user_management\src\server.ts:2:1)
+    at Module._compile (node:internal/modules/cjs/loader:1101:14)
+    at Module.m._compile (E:\projects\user_management\node_modules\ts-node\src\index.ts:1618:23)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1153:10)
+2023-02-15 22:20:02 error: uncaughtException: AuthRoute is not defined
+ReferenceError: AuthRoute is not defined
+    at Object.<anonymous> (E:\projects\user_management\src\server.ts:8:62)
+    at Module._compile (node:internal/modules/cjs/loader:1101:14)
+    at Module.m._compile (E:\projects\user_management\node_modules\ts-node\src\index.ts:1618:23)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1153:10)
+    at Object.require.extensions.<computed> [as .ts] (E:\projects\user_management\node_modules\ts-node\src\index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:981:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:822:12)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)
+    at phase4 (E:\projects\user_management\node_modules\ts-node\src\bin.ts:649:14)
+    at bootstrap (E:\projects\user_management\node_modules\ts-node\src\bin.ts:95:10)
+2023-02-15 22:36:02 error: uncaughtException: userModel is not defined
+ReferenceError: userModel is not defined
+    at Object.<anonymous> (E:\projects\user_management\src\models\users.model.ts:15:16)
+    at Module._compile (node:internal/modules/cjs/loader:1101:14)
+    at Module.m._compile (E:\projects\user_management\node_modules\ts-node\src\index.ts:1618:23)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1153:10)
+    at Object.require.extensions.<computed> [as .ts] (E:\projects\user_management\node_modules\ts-node\src\index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:981:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:822:12)
+    at Module.require (node:internal/modules/cjs/loader:1005:19)
+    at require (node:internal/modules/cjs/helpers:102:18)
+    at Object.<anonymous> (E:\projects\user_management\src\services\users.service.ts:5:1)
+2023-02-15 22:36:04 error: uncaughtException: userModel is not defined
+ReferenceError: userModel is not defined
+    at Object.<anonymous> (E:\projects\user_management\src\models\users.model.ts:15:16)
+    at Module._compile (node:internal/modules/cjs/loader:1101:14)
+    at Module.m._compile (E:\projects\user_management\node_modules\ts-node\src\index.ts:1618:23)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1153:10)
+    at Object.require.extensions.<computed> [as .ts] (E:\projects\user_management\node_modules\ts-node\src\index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:981:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:822:12)
+    at Module.require (node:internal/modules/cjs/loader:1005:19)
+    at require (node:internal/modules/cjs/helpers:102:18)
+    at Object.<anonymous> (E:\projects\user_management\src\services\users.service.ts:5:1)
+2023-02-15 22:43:11 error: [POST] /users >> StatusCode:: 400, Message:: property name should not exist, property dob should not exist, password must be a string
+2023-02-15 22:43:53 error: uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/routes/users.route.ts[0m:[93m20[0m:[93m46[0m - [91merror[0m[90m TS1135: [0mArgument expression expected.
+
+[7m20[0m     this.router.put(`${this.path}/:id(\\d+)`,, this.usersController.updateUser);
+[7m  [0m [91m                                             ~[0m
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/routes/users.route.ts[0m:[93m20[0m:[93m46[0m - [91merror[0m[90m TS1135: [0mArgument expression expected.
+
+[7m20[0m     this.router.put(`${this.path}/:id(\\d+)`,, this.usersController.updateUser);
+[7m  [0m [91m                                             ~[0m
+
+    at createTSError (E:\projects\user_management\node_modules\ts-node\src\index.ts:859:12)
+    at reportTSError (E:\projects\user_management\node_modules\ts-node\src\index.ts:863:19)
+    at E:\projects\user_management\node_modules\ts-node\src\index.ts:1379:34
+    at Object.compile (E:\projects\user_management\node_modules\ts-node\src\index.ts:1458:13)
+    at Module.m._compile (E:\projects\user_management\node_modules\ts-node\src\index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1153:10)
+    at Object.require.extensions.<computed> [as .ts] (E:\projects\user_management\node_modules\ts-node\src\index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:981:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:822:12)
+    at Module.require (node:internal/modules/cjs/loader:1005:19)
+2023-02-15 22:44:14 error: [POST] /users >> StatusCode:: 409, Message:: This email balaji.s@kevells.com already exists
+2023-02-15 22:44:14 error: uncaughtException: Cannot read properties of null (reading 'email')
+TypeError: Cannot read properties of null (reading 'email')
+    at E:\projects\user_management\src\services\users.service.ts:26:57
+    at E:\projects\user_management\node_modules\mongoose\lib\model.js:5267:18
+    at processTicksAndRejections (node:internal/process/task_queues:78:11)
+2023-02-15 22:46:18 error: [POST] /users >> StatusCode:: 409, Message:: This email balaji.s@kevells.com already exists
+2023-02-15 22:46:19 error: uncaughtException: Cannot read properties of null (reading 'email')
+TypeError: Cannot read properties of null (reading 'email')
+    at E:\projects\user_management\src\services\users.service.ts:26:57
+    at E:\projects\user_management\node_modules\mongoose\lib\model.js:5267:18
+    at processTicksAndRejections (node:internal/process/task_queues:78:11)
+2023-02-15 22:48:57 error: [POST] /users >> StatusCode:: 409, Message:: This email balaji.s@kevells.com already exists
+2023-02-15 22:48:57 error: uncaughtException: Cannot read properties of null (reading 'email')
+TypeError: Cannot read properties of null (reading 'email')
+    at E:\projects\user_management\src\services\users.service.ts:26:57
+    at E:\projects\user_management\node_modules\mongoose\lib\model.js:5267:18
+    at processTicksAndRejections (node:internal/process/task_queues:78:11)
+2023-02-15 22:52:29 error: [POST] /users >> StatusCode:: 409, Message:: This email balaji.s@kevells.com already exists
+2023-02-15 22:52:30 error: uncaughtException: Cannot read properties of null (reading 'email')
+TypeError: Cannot read properties of null (reading 'email')
+    at E:\projects\user_management\src\services\users.service.ts:26:57
+    at E:\projects\user_management\node_modules\mongoose\lib\model.js:5267:18
+    at processTicksAndRejections (node:internal/process/task_queues:78:11)
+2023-02-15 23:00:34 error: uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/services/users.service.ts[0m:[93m18[0m:[93m20[0m - [91merror[0m[90m TS1005: [0m',' expected.
+
+[7m18[0m     const findUser this.users.find(user => user._id === userId);
+[7m  [0m [91m                   ~~~~[0m
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/services/users.service.ts[0m:[93m18[0m:[93m20[0m - [91merror[0m[90m TS1005: [0m',' expected.
+
+[7m18[0m     const findUser this.users.find(user => user._id === userId);
+[7m  [0m [91m                   ~~~~[0m
+
+    at createTSError (E:\projects\user_management\node_modules\ts-node\src\index.ts:859:12)
+    at reportTSError (E:\projects\user_management\node_modules\ts-node\src\index.ts:863:19)
+    at E:\projects\user_management\node_modules\ts-node\src\index.ts:1379:34
+    at Object.compile (E:\projects\user_management\node_modules\ts-node\src\index.ts:1458:13)
+    at Module.m._compile (E:\projects\user_management\node_modules\ts-node\src\index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1153:10)
+    at Object.require.extensions.<computed> [as .ts] (E:\projects\user_management\node_modules\ts-node\src\index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:981:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:822:12)
+    at Module.require (node:internal/modules/cjs/loader:1005:19)
+2023-02-15 23:00:59 error: [POST] /users >> StatusCode:: 409, Message:: This email balaji.s1@kevells.com already exists
+2023-02-15 23:01:45 error: [POST] /users >> StatusCode:: 409, Message:: This email balaji.s1@kevells.com already exists
+2023-02-15 23:01:58 error: [POST] /users >> StatusCode:: 409, Message:: This email balaji.s1@kevells.com already exists
+2023-02-15 23:02:57 error: [POST] /users >> StatusCode:: 409, Message:: This email balaji.s1@kevells.com already exists
+2023-02-15 23:03:12 error: [POST] /users >> StatusCode:: 500, Message:: data and salt arguments required
+2023-02-15 23:05:29 error: uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/services/users.service.ts[0m:[93m27[0m:[93m26[0m - [91merror[0m[90m TS1003: [0mIdentifier expected.
+
+[7m27[0m     console.log(findUser.)
+[7m  [0m [91m                         ~[0m
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/services/users.service.ts[0m:[93m27[0m:[93m26[0m - [91merror[0m[90m TS1003: [0mIdentifier expected.
+
+[7m27[0m     console.log(findUser.)
+[7m  [0m [91m                         ~[0m
+
+    at createTSError (E:\projects\user_management\node_modules\ts-node\src\index.ts:859:12)
+    at reportTSError (E:\projects\user_management\node_modules\ts-node\src\index.ts:863:19)
+    at E:\projects\user_management\node_modules\ts-node\src\index.ts:1379:34
+    at Object.compile (E:\projects\user_management\node_modules\ts-node\src\index.ts:1458:13)
+    at Module.m._compile (E:\projects\user_management\node_modules\ts-node\src\index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1153:10)
+    at Object.require.extensions.<computed> [as .ts] (E:\projects\user_management\node_modules\ts-node\src\index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:981:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:822:12)
+    at Module.require (node:internal/modules/cjs/loader:1005:19)
+2023-02-15 23:05:41 error: [POST] /users >> StatusCode:: 409, Message:: This email balaji.s1@kevells.com already exists
+2023-02-15 23:07:29 error: [POST] /users >> StatusCode:: 409, Message:: This email balaji.s1@kevells.com already exists
+2023-02-15 23:07:44 error: uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/services/users.service.ts[0m:[93m26[0m:[93m25[0m - [91merror[0m[90m TS1005: [0m',' expected.
+
+[7m26[0m     const findUser: User{}  = userModel.findOne().where({email:userData.email}).allowDiskUse(true);
+[7m  [0m [91m                        ~[0m
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/services/users.service.ts[0m:[93m26[0m:[93m25[0m - [91merror[0m[90m TS1005: [0m',' expected.
+
+[7m26[0m     const findUser: User{}  = userModel.findOne().where({email:userData.email}).allowDiskUse(true);
+[7m  [0m [91m                        ~[0m
+
+    at createTSError (E:\projects\user_management\node_modules\ts-node\src\index.ts:859:12)
+    at reportTSError (E:\projects\user_management\node_modules\ts-node\src\index.ts:863:19)
+    at E:\projects\user_management\node_modules\ts-node\src\index.ts:1379:34
+    at Object.compile (E:\projects\user_management\node_modules\ts-node\src\index.ts:1458:13)
+    at Module.m._compile (E:\projects\user_management\node_modules\ts-node\src\index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1153:10)
+    at Object.require.extensions.<computed> [as .ts] (E:\projects\user_management\node_modules\ts-node\src\index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:981:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:822:12)
+    at Module.require (node:internal/modules/cjs/loader:1005:19)
+2023-02-15 23:08:19 error: [POST] /users >> StatusCode:: 409, Message:: This email balaji.s1@kevells.com already exists
+2023-02-15 23:09:49 error: [POST] /users >> StatusCode:: 409, Message:: This email balaji.s1@kevells.com already exists
+2023-02-15 23:10:03 error: [POST] /users >> StatusCode:: 500, Message:: createUserData is not defined
+2023-02-15 23:10:49 error: [POST] /users >> StatusCode:: 409, Message:: This email balaji.s@kevells.com already exists
+2023-02-15 23:11:35 error: [POST] /users >> StatusCode:: 409, Message:: This email balaji.s1@kevells.com already exists
+2023-02-15 23:14:43 error: [GET] /users/63ed166098f7b54409d987b3 >> StatusCode:: 500, Message:: Query was already executed: User.find({})
+2023-02-15 23:14:43 error: uncaughtException: Cannot read properties of null (reading '_id')
+TypeError: Cannot read properties of null (reading '_id')
+    at E:\projects\user_management\src\services\users.service.ts:18:60
+    at E:\projects\user_management\node_modules\mongoose\lib\model.js:5267:18
+    at processTicksAndRejections (node:internal/process/task_queues:78:11)
+2023-02-15 23:14:54 error: [GET] /users/63ed166098f7b54409d987b3 >> StatusCode:: 500, Message:: Query was already executed: User.find({})
+2023-02-15 23:14:54 error: uncaughtException: Cannot read properties of null (reading '_id')
+TypeError: Cannot read properties of null (reading '_id')
+    at E:\projects\user_management\src\services\users.service.ts:18:60
+    at E:\projects\user_management\node_modules\mongoose\lib\model.js:5267:18
+    at processTicksAndRejections (node:internal/process/task_queues:78:11)
+2023-02-15 23:18:07 error: [GET] /users/63ed166098f7b54409d987b3 >> StatusCode:: 500, Message:: Cast to ObjectId failed for value "NaN" (type number) at path "_id" for model "User"
+2023-02-15 23:21:01 error: [GET] /users/63ed166098f7b54409d987b3 >> StatusCode:: 500, Message:: mongoose_1.SchemaTypes.object is not a function
+2023-02-15 23:21:44 error: uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/services/users.service.ts[0m:[93m19[0m:[93m81[0m - [91merror[0m[90m TS1003: [0mIdentifier expected.
+
+[7m19[0m     const findUser : User[] = await this.users.findOne().where({_id:SchemaTypes.(userId)}).exec();
+[7m  [0m [91m                                                                                ~[0m
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/services/users.service.ts[0m:[93m19[0m:[93m81[0m - [91merror[0m[90m TS1003: [0mIdentifier expected.
+
+[7m19[0m     const findUser : User[] = await this.users.findOne().where({_id:SchemaTypes.(userId)}).exec();
+[7m  [0m [91m                                                                                ~[0m
+
+    at createTSError (E:\projects\user_management\node_modules\ts-node\src\index.ts:859:12)
+    at reportTSError (E:\projects\user_management\node_modules\ts-node\src\index.ts:863:19)
+    at E:\projects\user_management\node_modules\ts-node\src\index.ts:1379:34
+    at Object.compile (E:\projects\user_management\node_modules\ts-node\src\index.ts:1458:13)
+    at Module.m._compile (E:\projects\user_management\node_modules\ts-node\src\index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1153:10)
+    at Object.require.extensions.<computed> [as .ts] (E:\projects\user_management\node_modules\ts-node\src\index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:981:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:822:12)
+    at Module.require (node:internal/modules/cjs/loader:1005:19)
+2023-02-15 23:22:59 error: uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/services/users.service.ts[0m:[93m19[0m:[93m81[0m - [91merror[0m[90m TS1003: [0mIdentifier expected.
+
+[7m19[0m     const findUser : User[] = await this.users.findOne().where({_id:SchemaTypes.(userId)}).exec();
+[7m  [0m [91m                                                                                ~[0m
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/services/users.service.ts[0m:[93m19[0m:[93m81[0m - [91merror[0m[90m TS1003: [0mIdentifier expected.
+
+[7m19[0m     const findUser : User[] = await this.users.findOne().where({_id:SchemaTypes.(userId)}).exec();
+[7m  [0m [91m                                                                                ~[0m
+
+    at createTSError (E:\projects\user_management\node_modules\ts-node\src\index.ts:859:12)
+    at reportTSError (E:\projects\user_management\node_modules\ts-node\src\index.ts:863:19)
+    at E:\projects\user_management\node_modules\ts-node\src\index.ts:1379:34
+    at Object.compile (E:\projects\user_management\node_modules\ts-node\src\index.ts:1458:13)
+    at Module.m._compile (E:\projects\user_management\node_modules\ts-node\src\index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1153:10)
+    at Object.require.extensions.<computed> [as .ts] (E:\projects\user_management\node_modules\ts-node\src\index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:981:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:822:12)
+    at Module.require (node:internal/modules/cjs/loader:1005:19)
+2023-02-15 23:23:10 error: [GET] /users/63ed166098f7b54409d987b3 >> StatusCode:: 500, Message:: this.splitPath is not a function
+2023-02-15 23:24:24 error: [GET] /users/63ed166098f7b54409d987b3 >> StatusCode:: 500, Message:: this.splitPath is not a function
+2023-02-15 23:26:23 error: [GET] /users/63ed166098f7b54409d987b3 >> StatusCode:: 500, Message:: this.splitPath is not a function
+2023-02-15 23:26:48 error: [GET] /users/63ed166098f7b54409d987b3 >> StatusCode:: 500, Message:: this.splitPath is not a function
+2023-02-15 23:26:56 error: [GET] /users/63ed166098f7b54409d987b3 >> StatusCode:: 500, Message:: this.splitPath is not a function
+2023-02-15 23:27:08 error: [GET] /users/63ed166098f7b54409d987b3 >> StatusCode:: 500, Message:: this.splitPath is not a function
+2023-02-15 23:27:16 error: [GET] /users/63ed166098f7b54409d987b3 >> StatusCode:: 500, Message:: this.splitPath is not a function
+2023-02-15 23:28:35 error: [GET] /users/63ed166098f7b54409d987b3 >> StatusCode:: 500, Message:: this.splitPath is not a function
+2023-02-15 23:28:47 error: [GET] /users/63ed166098f7b54409d987b3 >> StatusCode:: 500, Message:: this.splitPath is not a function
+2023-02-15 23:29:02 error: [GET] /users/63ed166098f7b54409d987b3 >> StatusCode:: 500, Message:: this.splitPath is not a function
+2023-02-15 23:29:20 error: [GET] /users/63ed166098f7b54409d987b3 >> StatusCode:: 500, Message:: this.splitPath is not a function
+2023-02-15 23:29:28 error: [GET] /users/63ed166098f7b54409d987b3 >> StatusCode:: 500, Message:: this.splitPath is not a function
+2023-02-15 23:29:36 error: [GET] /users/63ed166098f7b54409d987b3 >> StatusCode:: 500, Message:: this.splitPath is not a function
+2023-02-15 23:29:52 error: [GET] /users/63ed166098f7b54409d987b3 >> StatusCode:: 500, Message:: this.splitPath is not a function
+2023-02-15 23:30:11 error: [GET] /users/63ed166098f7b54409d987b3 >> StatusCode:: 500, Message:: this.splitPath is not a function
+2023-02-15 23:30:20 error: [GET] /users/63ed166098f7b54409d987b3 >> StatusCode:: 500, Message:: this.splitPath is not a function
+2023-02-15 23:32:37 error: uncaughtException: Route.put() requires a callback function but got a [object Undefined]
+Error: Route.put() requires a callback function but got a [object Undefined]
+    at Route.<computed> [as put] (E:\projects\user_management\node_modules\express\lib\router\route.js:211:15)
+    at Function.proto.<computed> [as put] (E:\projects\user_management\node_modules\express\lib\router\index.js:521:19)
+    at UsersRoute.initializeRoutes (E:\projects\user_management\src\routes\users.route.ts:20:17)
+    at new UsersRoute (E:\projects\user_management\src\routes\users.route.ts:13:10)
+    at Object.<anonymous> (E:\projects\user_management\src\server.ts:8:40)
+    at Module._compile (node:internal/modules/cjs/loader:1101:14)
+    at Module.m._compile (E:\projects\user_management\node_modules\ts-node\src\index.ts:1618:23)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1153:10)
+    at Object.require.extensions.<computed> [as .ts] (E:\projects\user_management\node_modules\ts-node\src\index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:981:32)
+2023-02-15 23:32:57 error: [DELETE] /users/63ed166098f7b54409d987b3 >> StatusCode:: 409, Message:: User doesn't exist
+2023-02-15 23:34:22 error: [GET] /users/63ed166098f7b54409d987b3 >> StatusCode:: 409, Message:: User doesn't exist
